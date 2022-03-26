@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply leading-[1.15];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply inline-block font-karla font-medium;
+  }
+
+  body {
+    @apply m-0 p-0 overflow-x-hidden font-source-san-pro;
+  }
+}
+
+.transition-w-h {
+  transition: height 0.5s ease 0s, width 1s ease 0.5s;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+.swiper-wrapper .swiper-slide {
+  height: auto;
+}
+
+@layer components {
+  .btn-visit {
+    @apply relative bg-dark text-light py-2 px-[calc(2rem+2vw)] rounded-bl-[50px] overflow-hidden font-bold
+      hover:before:translate-x-[0] hover:text-dark 
+      hover:border-[1px] hover:border-solid hover:border-dark;
+  }
+  .btn-visit::before {
+    @apply absolute content-[''] left-0 top-0 w-full h-full bg-light transition-all duration-300 ease-linear
+    translate-x-[-150%] z-[1];
+  }
+}
