@@ -33,7 +33,7 @@ export const Work = [
     description: "A realtime chat app that help user to communicate with each other in different languages",
     tags: ["react", "nodejs", "rapid api"],
 
-    demo: "/404",
+    demo: "https://multiple-languages-chat.vercel.app",
     github: 'https://github.com/nhtminh2999/multiple_languages_chat'
   },
   {
