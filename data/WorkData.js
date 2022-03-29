@@ -36,13 +36,4 @@ export const Work = [
     demo: "https://multiple-languages-chat.vercel.app",
     github: 'https://github.com/nhtminh2999/multiple_languages_chat'
   },
-  {
-    id: 5,
-    name: "Tien Len Steel (Product Page)",
-    description: "",
-    tags: ["react", "ant-design", "nodejs", "restful api"],
-
-    demo: "https://tienlensteel.com.vn",
-    github: '/404'
-  },
 ] 
